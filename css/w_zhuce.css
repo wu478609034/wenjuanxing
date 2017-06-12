@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.w_zhuce_quanju {
+  width: 100%; }
+  .w_zhuce_quanju > div:first-child {
+    width: 910px;
+    margin: 0 auto;
+    border: 1px solid #e9e9e8; }
+    .w_zhuce_quanju > div:first-child > p {
+      text-align: center;
+      padding: 10px 0;
+      background: #0094da;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      position: relative; }
+      .w_zhuce_quanju > div:first-child > p span {
+        display: block;
+        position: absolute;
+        border-top: 10px solid #0094da;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        bottom: -10px;
+        left: 50%; }
+    .w_zhuce_quanju > div:first-child form {
+      width: 600px;
+      margin: 0 auto;
+      padding-left: 165px;
+      padding-bottom: 50px; }
+      .w_zhuce_quanju > div:first-child form > p {
+        margin-top: 20px;
+        padding-left: 20px;
+        overflow: hidden; }
+        .w_zhuce_quanju > div:first-child form > p > span:first-child {
+          display: inline-block;
+          text-align: right;
+          width: 80px;
+          padding-right: 10px;
+          font-size: 14px; }
+        .w_zhuce_quanju > div:first-child form > p .huoqu20, .w_zhuce_quanju > div:first-child form > p .huoqu10, .w_zhuce_quanju > div:first-child form > p .mima10, .w_zhuce_quanju > div:first-child form > p .mima20 {
+          display: inline-block;
+          width: 210px;
+          padding-left: 10px;
+          padding: 10px 0;
+          display: none;
+          float: right; }
+          .w_zhuce_quanju > div:first-child form > p .huoqu20 img, .w_zhuce_quanju > div:first-child form > p .huoqu10 img, .w_zhuce_quanju > div:first-child form > p .mima10 img, .w_zhuce_quanju > div:first-child form > p .mima20 img {
+            vertical-align: middle;
+            padding-right: 4px; }
+        .w_zhuce_quanju > div:first-child form > p .huoqu20, .w_zhuce_quanju > div:first-child form > p .mima20 {
+          color: red; }
+        .w_zhuce_quanju > div:first-child form > p input {
+          width: 236px;
+          display: inline-block;
+          padding: 8px 10px;
+          height: 16px; }
+      .w_zhuce_quanju > div:first-child form > p:nth-child(3) span:nth-child(3) {
+        padding-left: 20px; }
+      .w_zhuce_quanju > div:first-child form > p:first-child {
+        margin-top: 40px; }
+      .w_zhuce_quanju > div:first-child form > p:nth-child(4) input {
+        width: 130px;
+        height: 22px; }
+      .w_zhuce_quanju > div:first-child form > p:nth-child(4) span:nth-child(3) {
+        display: inline-block;
+        width: 300px;
+        padding: 13px 0;
+        display: none;
+        float: right; }
+      .w_zhuce_quanju > div:first-child form > p:nth-child(6) input {
+        padding: 0 90px;
+        height: 38px;
+        line-height: 38px;
+        background: #f17819;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 14px; }
+      .w_zhuce_quanju > div:first-child form > p:nth-child(6) input:hover {
+        background: orange; }
+      .w_zhuce_quanju > div:first-child form > div {
+        margin-left: 150px;
+        padding: 20px 0; }
+        .w_zhuce_quanju > div:first-child form > div p {
+          font-size: 18px;
+          color: #f17825; }
+        .w_zhuce_quanju > div:first-child form > div p:hover {
+          color: orange; }
+  .w_zhuce_quanju .w_fenye5_footer {
+    margin-top: -35px; }
+    .w_zhuce_quanju .w_fenye5_footer .w_cont10 {
+      width: 100%;
+      background: #f6f6f6;
+      margin-top: 80px; }
+      .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 {
+        width: 940px;
+        padding: 20px 0;
+        margin: 0 auto; }
+        .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul {
+          display: flex;
+          padding: 30px 0; }
+          .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li {
+            border-right: 1px solid #e5e5e5;
+            -webkit-flex-grow: 1;
+            padding-left: 30px;
+            list-style: none; }
+            .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li p {
+              line-height: 30px;
+              font-weight: bold;
+              font-size: 18px; }
+              .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li p img {
+                vertical-align: middle;
+                margin-right: 15px; }
+            .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol:last-child li:nth-child(2) {
+              position: relative; }
+              .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol:last-child li:nth-child(2) img {
+                position: absolute;
+                top: -8px; }
+            .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol {
+              margin-left: 50px; }
+              .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li {
+                list-style: none;
+                padding: 3px 0;
+                color: #7e7b7b;
+                font-size: 14px; }
+                .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li img {
+                  vertical-align: middle; }
+                .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li a {
+                  text-decoration: none;
+                  color: #a5a5a5; }
+              .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li:hover a {
+                color: orange; }
+          .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li:last-child {
+            border: 0; }
+        .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 div {
+          overflow: hidden;
+          padding: 10px 0;
+          border-bottom: 1px solid #ccc; }
+          .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 div p {
+            height: 30px; }
+          .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 div p:first-child {
+            float: left; }
+            .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 div p:first-child span {
+              color: #ccc;
+              font-size: 18px;
+              display: block;
+              padding-top: 5px; }
+          .w_zhuce_quanju .w_fenye5_footer .w_cont10 .w_cont10_1 div p:last-child {
+            float: right; }
+
+/*# sourceMappingURL=w_zhuce.css.map */

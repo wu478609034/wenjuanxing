@@ -1,0 +1,591 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body {
+	font-family: "Microsoft Yahei", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Sans Serif", "Pingfang SC", "Helvetica Neue", "WenQuanYi Micro Hei", sans;
+	font-size: 16px;
+	color: #333333;
+	background: #F8F8F8;
+	padding: 0;
+	margin: 0
+}
+li {
+	list-style: none;
+}
+.clearfix, .clearfix1, .clearfix2 {
+	clear: both;
+}
+a, a:link, a:visited {
+	color: #333
+}
+.wjx-sfont {
+	color: #f7941d;
+}
+/*----------按钮----------*/
+input, button {
+	font-family: "Microsoft YaHei Light", "Microsoft Yahei", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Sans Serif", "Pingfang SC", "Helvetica Neue", "WenQuanYi Micro Hei", sans;
+	border: 0;
+	outline: none;
+}
+.createbtn {
+	background: #f7941d;
+	border-radius: 12px;
+	padding: 0 20px;
+	font-size: 18px;
+	height: 46px;
+	line-height: 46px;
+}
+.createbtn img {
+	margin: 0 10px 2px 0;
+}
+.createbtn:hover {
+	background: #f17819;
+}
+.surveysbtn {
+	padding: 0 21px;
+	font-size: 18px;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 30px;
+	background: #f7941d;
+	position: absolute;
+	top: 50px;
+ *top:51px;
+	right: 192px;
+}
+.surveysbtn:hover {
+	background: #f17819;
+}
+/*-------------内容开始--------------*/
+.surveybanner {
+	background: url(/images/pubsurvey/wjbanner.jpg) no-repeat center;
+	height: 146px;
+}
+.search-form {
+	width: 430px;
+	margin-right: 30px;
+}
+.surveybanner ul {
+	width: 622px;
+	margin: 0 auto;
+	padding-top: 50px;
+	position: relative;
+}
+.surveybanner ul li {
+	float: left;
+}
+.surver-searchicon {
+	background: url(/images/pubsurvey/survey-ss.png) no-repeat center;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin: 0 10px 2px 0;
+	vertical-align: middle;
+}
+.survey-search {
+	width: 406px;
+	background: none;
+	border: 2px solid #f7941d;
+	border-radius: 30px;
+	line-height: 38px;
+	height: 38px;
+	color: #ebebeb;
+	padding: 2px 0 2px 20px;
+	;
+	font-size: 14px;
+}
+.survey-plus {
+	font-weight: 600;
+	font-family: Tahoma, Geneva, sans-serif;
+	line-height: 1;
+	font-size: 28px;
+	position: relative;
+	top: 3px;
+	display: inline-block;
+}
+.survey-container {
+	width: 100%;
+	background: #FFF;
+	padding: 60px 0 0 0;
+	overflow: hidden;
+	position: relative
+}
+.survey-item-title li {
+	display: inline-block;
+	position: relative;
+	padding: 0 14px;
+ *display:inline;
+	zoom: 1;
+	margin-right: 39px;
+    text-align:center;
+}
+.survey-item-title li a {
+	padding: 40px 0;
+	width: 100px;
+	background: #f5f5f5;
+	border-radius: 55px;
+	display: block;
+ *float:left;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.survey-item-title li i {
+	background: url(/images/pubsurvey/survey-item01.png) no-repeat center;
+	width: 50px;
+	height: 50px;
+	display: inline-block
+}
+.survey-item-title li em {
+	border-width: 8px;
+	position: absolute;
+	border-style: solid dashed dashed;
+	border-color: #f5f5f5 transparent transparent;
+	top: 129px;
+	left: 56px;
+	font-size: 0;
+	line-height: 0;
+}
+.survey-item-title i.sitem01 {
+	background-position: 5px -53px;
+}
+.survey-item-title i.sitem02 {
+	background-position: -58px -50px;
+}
+.survey-item-title i.sitem03 {
+	background-position: -121px -52px;
+}
+.survey-item-title i.sitem04 {
+	background-position: -183px -53px;
+}
+.survey-item-title i.sitem05 {
+	background-position: -246px -50px;
+}
+.survey-item-title i.sitem06 {
+	background-position: -311px -50px;
+}
+.survey-item-title li span {
+	position: absolute;
+	top: 150px;
+	left: 0;
+	width: 128px;
+}
+.scarethover {
+	border-color: #f7941d transparent transparent;
+}
+#TagList .selectTag a {
+	background: #f7941d;
+}
+#TagList .selectTag i {
+	background: #f7941d url(/images/pubsurvey/survey-item01.png) no-repeat center;
+}
+#TagList .selectTag i.sitem01 {
+	background-position: 5px 0;
+}
+#TagList .selectTag i.sitem02 {
+	background-position: -58px 0;
+}
+#TagList .selectTag i.sitem03 {
+	background-position: -121px -1px;
+}
+#TagList .selectTag i.sitem04 {
+	background-position: -183px 0;
+}
+#TagList .selectTag i.sitem05 {
+	background-position: -246px 0;
+}
+#TagList .selectTag i.sitem06 {
+	background-position: -311px 0;
+}
+#TagList .selectTag em {
+	border-width: 8px;
+	position: absolute;
+	border-style: solid dashed dashed;
+	border-color: #f7941d transparent transparent;
+	top: 129px;
+	left: 56px;
+	font-size: 0;
+	line-height: 0;
+}
+#tagContent div.selectTag {
+	display: block;
+}
+#TagList .selectTag span {
+	color: #f7941d;
+}
+.survey-ibox {
+	margin: 40px auto;
+	overflow: hidden;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.survey-ibox-ul {
+	width: 990px;
+	margin: 0 auto;
+}
+.survey-item-listbox {
+	padding-left: 1px;
+}
+.survey-item-listbox li {
+	float: left;
+	margin-right: 22px;
+	position: relative;
+	width: 221px;
+	background: #FFF;
+	display: inline-block;
+ *zoom:1;
+	font-size: 14px;
+	margin: 20px 13px;
+ *margin:20px 11px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.15);
+	box-shadow: 0 0 15px rgba(0,0,0,0.15);
+	transition: all 0.2s linear;
+}
+.survey-item-listbox li:hover {
+	-webkit-box-shadow: 0 4px 15px rgba(247,148,29,0.3);
+	box-shadow: 0 4px 15px rgba(247,148,29,0.3);
+	-webkit-transform: translate3d(0, -4px, 0);
+	-moz-transform: translate3d(0, -4px, 0);
+	-ms-transform: translate3d(0, -4px, 0);
+	transition: translate3d(0, -4px, 0);
+}
+.survey-item-listbox li a:hover {
+	color: #f7941d;
+}
+.survey-item-listbox img {
+	width: 221px;
+	height: 270px;
+	border-radius: 6px;
+	float: left;
+}
+.survey-item-listbox .survey-icon {
+	background: url(/images/pubsurvey/survey-icon.png) no-repeat;
+	background-position: center;
+	width: 221px;
+	height: 270px;
+	position: relative;
+	border-radius: 6px;
+    text-align:center;
+}
+.survey-item-listbox .survey-icon:hover {
+	background: url(/images/pubsurvey/survey-icon1.png) no-repeat;
+	background-position: center;
+	color: #fff;
+}
+.survey-icon1 {
+	font-size: 14px;
+	width: 74px;
+	height: 24px;
+	background-color: #f7941d;
+	line-height: 24px;
+	border-radius: 4px;
+	color: #fff;
+	position: absolute;
+	top: 68px;
+	left: 73px;
+	display: none;
+}
+.survey-item-listbox .survey-icon:hover .survey-icon1 {
+	display: block;
+}
+.survey-icon1 em {
+	display: block;
+	border-width: 6px;
+	position: absolute;
+	top: 24px;
+	left: 31px;
+	border-style: dashed dashed solid;
+	border-color: #f7941d transparent transparent;
+	font-size: 0;
+	line-height: 0;
+}
+.survey-item-txtbox {
+	width: 221px;
+	float: left;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	z-index: 999;
+}
+.survey-item-txtname {
+	display: block;
+	font-size: 16px;
+	font-weight: normal;
+	float: left;
+	margin: 0 0 16px 20px;
+}
+.survey-item-txtbox span {
+	color: #999999;
+	font-size: 12px;
+}
+.txtboxspanL {
+	float: left;
+	margin-left: 20px;
+}
+.txtboxspanR {
+	float: right;
+	margin-right: 20px;
+}
+.foot {
+	background: url(/images/pubsurvey/yejiao.jpg) no-repeat center;
+	width: 100%;
+	height: 324px;
+}
+/*-----------搜索结果--------------*/
+.survey-item {
+	width: 990px;
+	margin: 0 auto;
+}
+.survey-result-title {
+	margin: 0 auto;
+	width: 990px;
+	padding: 0 0 30px 0;
+	float: left;
+}
+.survey-result-hbox {
+	clear: both;
+	overflow: hidden;
+	margin: 0;
+	float: left;
+}
+.survey-result-hbox li {
+	float: left;
+	padding: 0 12px;
+	border-radius: 4px;
+	border: 1px solid #f7941d;
+	height: 28px;
+	line-height: 28px;
+	margin: 0 20px 0 0;
+}
+.survey-result-hbox li a {
+	color: #f7941d;
+}
+#TagTabs .selectTag a {
+	color: #FFF
+}
+#TagTabs .selectTag {
+	background: #f7941d;
+	border: 1px solid #f7941d;
+	color: #FFF;
+}
+#tagContent div.selectTag2 {
+	display: block;
+}
+.survey-result-txt {
+	color: #333333;
+	float: left;
+	line-height: 30px;
+}
+.survey-result-ritem {
+	float: right;
+	position: relative;
+}
+.survey-result-ritem li {
+	display: inline-block
+}
+.survey-result-ritem span {
+	line-height: 30px;
+	background: url(/images/pubsurvey/answer_sprites.png) no-repeat left center;
+	background-position: 5px -4px;
+	display: block;
+	text-align: left;
+	cursor: pointer;
+	padding: 0 0 0 25px;
+	margin: 0 10px 0 0;
+}
+.survey-result-ritem i {
+	display: block;
+	border-width: 8px;
+	position: absolute;
+	top: -14px;
+	left: 48px;
+	border-style: dashed dashed solid;
+	border-color: transparent transparent #FFF;
+	font-size: 0;
+	line-height: 0;
+}
+.survey-result-ritem em {
+	display: block;
+	border-width: 8px;
+	position: absolute;
+	top: -16px;
+	left: 48px;
+	border-style: dashed dashed solid;
+	border-color: transparent transparent #cccccc;
+	font-size: 0;
+	line-height: 0;
+}
+.survey-result-ritembox {
+	background: #FFF;
+	border: 1px solid #cccccc;
+	border-radius: 6px;
+	clear: both;
+	padding: 6px 10px;
+	position: absolute;
+	left: -45px;
+	top: 36px;
+	width: 88px;
+	display: none;
+	z-index: 9999;
+}
+.saritembox2 {
+	left: 87px !important;
+}
+.survey-result-ritembox li {
+	text-align: center;
+	display: block;
+	font-size: 12px;
+	margin: 0 0 6px 0;
+}
+.survey-result-ritembox a {
+	color: #999999;
+}
+.survey-result-ritembox a:hover {
+	color: #333;
+}
+.show {
+	display: block;
+}
+.survey-answernum {
+	float: left;
+}
+.survey-part {
+	float: left;
+}
+.survey-slist-con {
+	margin: 0;
+}
+.sinnerbox {
+	padding: 20px 0;
+	overflow: hidden;
+	width: 990px;
+	margin: 0 0 20px 0;
+	border-radius: 6px;
+}
+.sinnerbox:hover {
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+	border-radius: 6px;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.surveryA {
+	background: #fafafa url(/images/pubsurvey/survey-post-ico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryA:hover {
+	background: #FFF url(/images/pubsurvey/survey-post-hico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryB {
+	background: #fafafa url(/images/pubsurvey/exam-post-ico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryB:hover {
+	background: #FFF url(/images/pubsurvey/exam-post-hico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryC {
+	background: #fafafa url(/images/pubsurvey/vote-post-ico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryC:hover {
+	background: #FFF url(/images/pubsurvey/vote-post-hico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryD {
+	background: #fafafa url(/images/pubsurvey/form-post-ico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryD:hover {
+	background: #FFF url(/images/pubsurvey/form-post-hico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryE {
+	background: #fafafa url(/images/pubsurvey/staff360-post-ico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryE:hover {
+	background: #FFF url(/images/pubsurvey/staff360-post-hico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryF {
+	background: #fafafa url(/images/pubsurvey/staff-post-ico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.surveryF:hover {
+	background: #FFF url(/images/pubsurvey/staff-post-hico.png) no-repeat;
+	background-position: 22px 24px;
+}
+.survey-post-list {
+	margin: 0 0 0 78px;
+	text-align: left;
+	border-left: 2px solid #ccc;
+}
+.survey-post-list h2 {
+	font-size: 16px;
+	font-weight: normal;
+	color: #333333;
+	display: block;
+	margin: 0 0 6px 20px;
+}
+.survey-prtxt {
+	float: right !important;
+}
+.survey-listthum {
+	overflow: hidden;
+	padding: 0 20px 2px 20px;
+}
+.survey-listthum span {
+	color: #999;
+	float: left;
+	font-size: 12px;
+}
+.survey-listinner {
+	float: left;
+	margin: 0 18px 0 35px;
+	border-right: 2px solid #cccccc;
+}
+.survey-postico {
+	background-position: 0 0;
+}
+A h2.wjx-lstxt:hover {
+	color: #f7941d;
+}
+.survey-prompt {
+	text-align: left;
+	font-size: 12px;
+	color: #333;
+}
+ .pageitem {
+    cursor: pointer;
+    border-radius: 6px;
+    min-width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    list-style: none;
+    display:inline-block;
+    *float:left;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    margin-right: 8px;
+    font-family: Arial;
+}
+          .pageitem:hover {
+    transition: all .3s ease;
+    border-color: #2db7f5;
+}
+          .pageitem:hover a {
+    color: #2db7f5;
+}
+            .pageitem a {
+       color: #666;
+        transition: none;
+        width:28px;
+        display:block;
+            }
+          .pageactive {
+    background-color: #2db7f5;
+    border-color: #2db7f5;
+}
+.pageactive a, .pageactive a:hover {
+    color: #fff;
+}

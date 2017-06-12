@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/angular.js"></script>
+    <script type="text/javascript" src="../js/angular-route.min.js"></script>
+    <script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="../css/f_index.css">
+    <link rel="stylesheet" href="../css/f_shouye.css">
+    <link rel="stylesheet" type="text/css" href="../css/w_zhuce.css"/>
+
+
+</head>
+<body ng-controller="myctrl">
+<div class="fch">
+    <div class="header">
+        <div class="left">
+            <img src="../image/logo.jpg" alt="">
+        </div>
+
+        <div class="right">
+            <ul>
+                <li class="f_bar_li"><a href="#aaa">首 页</a></li>
+                <li class="f_bar_li"><a href="#bbb">应用展示</a></li>
+                <li class="f_bar_li"><a href="#ccc">企业版服务</a></li>
+                <li class="f_bar_li"><a href="#ddd">样本服务</a></li>
+                <li class="f_bar_li"><a href="#eee">问卷中心</a></li>
+            </ul>
+            <div class="denglu">
+                <a href="#fff"><input type="button" value="注册" class="zc yin001"></a>
+                <a href="#ggg"><input type="button" value="登录" class="dl yin001"></a>
+                <img src="../image/ico_qq.gif" alt="">
+                <span>QQ登录</span>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-view></ng-view>
+</body>
+<script type="text/javascript">
+    var f_bar_li = document.getElementsByClassName("f_bar_li");
+    var yin001 = document.getElementsByClassName("yin001");
+    for(var i=0;i<f_bar_li.length;i++){
+        f_bar_li[i].index = i;
+        f_bar_li[i].onclick = function(){
+            for(var j=0;j<f_bar_li.length;j++){
+                f_bar_li[j].style.borderBottom = "none";
+            }
+            f_bar_li[this.index].style.borderBottom = "2px solid #E77817";
+        }
+        
+    }
+    for(var i=0;i<yin001.length;i++){
+	    yin001[i].onclick = function(){
+	    	 for(var j=0;j<f_bar_li.length;j++){
+	    	 		f_bar_li[j].style.borderBottom = "none";
+	         }
+	    }
+    }
+
+    var app = angular.module("myApp",["ngRoute"]);
+    app.config(["$routeProvider","$locationProvider",function($routeProvider,$locationProvider){
+        $locationProvider.hashPrefix("");
+        $routeProvider.when("/aaa",{
+            templateUrl:"shouye.html",
+            controller:"myctrl"
+        }).when("/bbb",{
+            templateUrl:"w_yingyongzhanshi.html",
+            controller:"myctrl"
+        }).when("/ccc",{
+            templateUrl:"qiyebanfuwu.html"
+        }).when("/ddd",{
+            templateUrl:"w_fenye4.html"
+            
+        }).when("/eee",{
+            templateUrl:"w_fenye5.html",
+             controller:"myctrl"
+        }).when("/fff",{
+            templateUrl:"w_zhuce.html" ,
+            controller:"myctrl"
+        }).when("/ggg",{
+            templateUrl:"w_denglu.html" 
+        })
+        
+        .otherwise({redirectTo:"/aaa"})
+    }]);
+    app.controller("myctrl",function($scope,$timeout){
+      	$scope.dian = [
+				{"img":"../img/11.png","img1":"../img/11.png","img2":"../img/11.png","cont":"调研/考研"},
+				{"img":"../img/2.png","img1":"../img/22.png","img2":"../img/2.png","cont":"考试"},
+				{"img":"../img/3.png","img1":"../img/33.png","img2":"../img/3.png","cont":"投票"},
+				{"img":"../img/4.png","img1":"../img/44.png","img2":"../img/4.png","cont":"报名"},
+				{"img":"../img/5.png","img1":"../img/55.png","img2":"../img/5.png","cont":"360测评"},
+				{"img":"../img/6.png","img1":"../img/66.png","img2":"../img/6.png","cont":"测评"}
+			]
+			$scope.add = function(index){
+				
+				$scope.dian[index].img = $scope.dian[index].img1
+			}
+			$scope.add1 = function(index){
+				for(var i in $scope.dian){
+					$scope.dian[i].img = $scope.dian[i].img2
+				}
+			}
+			
+			
+			
+        
+          $scope.dian1 = [
+				{"img":"../img/001.png","img1":"../img/001.png","img2":"../img/01.png","cont":"问卷调查"},
+				{"img":"../img/02.png","img1":"../img/002.png","img2":"../img/02.png","cont":"在线考试"},
+				{"img":"../img/03.png","img1":"../img/003.png","img2":"../img/03.png","cont":"在线投票"},
+				{"img":"../img/04.png","img1":"../img/004.png","img2":"../img/04.png","cont":"报名签到"},
+				{"img":"../img/05.png","img1":"../img/005.png","img2":"../img/05.png","cont":"360员工测试"},
+				{"img":"../img/06.png","img1":"../img/006.png","img2":"../img/06.png","cont":"在线测评"}
+			]
+			$scope.huan = [
+				{"img":"../img/survey-icon.png","img1":"../img/survey-icon1.png","img2":"../img/survey-icon.png"}
+			]
+			$scope.huan1 = function(){		
+					$scope.huan[0].img = $scope.huan[0].img1		
+			}
+			$scope.huan2 = function(){		
+					$scope.huan[0].img = $scope.huan[0].img2	
+			}
+			$scope.add1 = function(index){
+				for(var i in $scope.dian1){
+					$scope.dian1[i].img = $scope.dian1[i].img2
+				}
+				$scope.dian1[index].img = $scope.dian1[index].img1	
+				var li1 = $(".w_fenye5_cont1 li p span")
+				var img = $(".w_fenye5_cont1 li p img")
+				var p1 = $(".w_fenye5_cont1 li p")
+				var li0 = $(".w_fenye5_cont1 li")
+				var oDiv = $(".w_fenye5_cont2 div")
+				li1.eq(index).css({"display":"block"}).parent().parent().siblings().children().children('span').css({"display":"none"})
+				p1.eq(index).css({"background":"orange"}).parent().siblings().children('p').css({"background":"#ccc"})
+				li0.eq(index).css({"color":"orange"}).siblings().css({"color":"#000"})
+				oDiv.eq(index).css({"display":"block"}).siblings().css({"display":"none"})
+			}
+        
+        
+      
+      
+      
+      
+      	$timeout(function(){
+            var f_imgs = document.getElementsByClassName("f_imgs");
+            var f_img = document.getElementsByClassName("f_img");
+            var span1 = document.getElementsByClassName("span1");
+            var span2 = document.getElementsByClassName("span2");
+            var f_images = [
+                "../image/F-Cicon1-hover.gif",
+                "../image/F-Cicon2-hover.gif",
+                "../image/F-Cicon3-hover.gif",
+                "../image/F-Cicon4-hover.gif",
+                "../image/F-Cicon5-hover.gif",
+                "../image/F-Cicon6-hover.gif",
+                "../image/F-Cicon7-hover.gif"
+            ];
+            var f_images2 = [
+                "../image/F-Cicon1.gif",
+                "../image/F-Cicon2.gif",
+                "../image/F-Cicon3.gif",
+                "../image/F-Cicon4.gif",
+                "../image/F-Cicon5.gif",
+                "../image/F-Cicon6.gif",
+                "../image/F-Cicon7.gif"
+            ]
+            for(var i=0;i<f_imgs.length;i++){
+                f_imgs[i].index = i;
+                f_imgs[i].onmouseover = function(){
+                    for(var j=0;j<f_imgs.length;j++){
+                        f_imgs[j].src = f_images2[j];
+                        f_img[j].style.display = "none";
+                        span1[j].style.display = "none";
+                        span2[j].style.display = "none";
+                    }
+                    f_imgs[this.index].src = f_images[this.index];
+                    f_img[this.index].style.display = "block";
+                    span1[this.index].style.display = "block";
+                    span2[this.index].style.display = "block";
+                }
+            }
+
+
+			var f_imgs_2 = document.getElementsByClassName("f_imgs_2");
+		    var f_img_2 = document.getElementsByClassName("f_img_2");
+		    var span1_2 = document.getElementsByClassName("span1_2");
+		    var span2_2 = document.getElementsByClassName("span2_2");
+		    var f_images_2 = [
+		        "../image/F-Cicon1-hover.gif",
+		        "../image/F-Cicon2-hover.gif",
+		        "../image/F-Cicon3-hover.gif",
+		        "../image/F-Cicon4-hover.gif",
+		        "../image/F-Cicon5-hover.gif",
+		        "../image/F-Cicon6-hover.gif",
+		        "../image/F-Cicon7-hover.gif"
+		    ];
+		    var f_images2_2 = [
+		        "../image/F-Cicon1.gif",
+		        "../image/F-Cicon2.gif",
+		        "../image/F-Cicon3.gif",
+		        "../image/F-Cicon4.gif",
+		        "../image/F-Cicon5.gif",
+		        "../image/F-Cicon6.gif",
+		        "../image/F-Cicon7.gif"
+		    ]
+		    for(var i=0;i<f_imgs_2.length;i++){
+		        f_imgs_2[i].index = i;
+		        f_imgs_2[i].onmouseover = function(){
+		            for(var j=0;j<f_imgs_2.length;j++){
+		                f_imgs_2[j].src = f_images2_2[j];
+		                f_img_2[j].style.display = "none";
+		                span1_2[j].style.display = "none";
+		                span2_2[j].style.display = "none";
+		            }
+		            f_imgs_2[this.index].src = f_images_2[this.index];
+		            f_img_2[this.index].style.display = "block";
+		            span1_2[this.index].style.display = "block";
+		            span2_2[this.index].style.display = "block";
+		        }
+		    }
+
+			
+        },500)
+        
+			
+    })
+    
+</script>
+</html>

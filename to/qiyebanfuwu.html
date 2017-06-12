@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../js/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/f_qiyebanfuwu.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="fch_qiyebanfuwu">
+    <div class="banner">
+        <div>
+            <div>
+                <img src="../image/zixun.png" alt="">
+                <p>400-839-8080转1</p>
+            </div>
+
+            <input type="button" value="购买服务" data-toggle="modal" data-target="#myModal"><input type="button" value="免费试用" data-toggle="modal" data-target="#myModal2">
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                </div>
+                <div class="modal-body">
+
+
+
+
+                    <div>
+
+                        <form action="">
+
+                            <p>
+                                <span>登录名:</span><input type="text" value="" class="denglu" onfocus="huoqu()" onblur="shiqu()"/>
+                                <span class="huoqu1"><img class="img1" src="../image/promptInfo.gif"/>支持英文和数字，<i>注册后不能修改</i></span>
+                                <span class="huoqu2"><img class="img1" src="../image/InfoMistake.gif"/>用户名不能为空</span>
+                            </p>
+                            <p>
+                                <span>密码:</span><input type="text" class="mima" value="" onfocus="mima00()" onblur="mima01()"/>
+                                <span class="mima1"><img class="img1" src="../image/promptInfo.gif"/>支持英文和数字，<i>注册后不能修改</i></span>
+                                <span class="mima2"><img class="img1" src="../image/InfoMistake.gif"/>密码长度要在6-20个字符之间。</span>
+                            </p>
+                            <p>
+                                <span>手机号码:</span><input type="text" value=""/><span>可通过手机号登录问卷星</span>
+                            </p>
+                            <p>
+                                <span>图形验证码:</span><input class="yan" type="text"  onfocus="yan()" value=""/>
+                                <span class="yanzheng">验证码</span>
+                            </p>
+                            <p>
+                                <span></span><a href="#">我已阅读并接受问卷星服务条款</a>
+                            </p>
+                            <p>
+                                <span></span><input type="button" value="创建用户"/>
+                            </p>
+                            <div>
+                                <p>已有账号，立即登录</p>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                </div>
+                <div class="modal-body">
+
+
+
+
+                    <div>
+                        <div class="biaoti"><span>注：</span>试用阶段可使用企业版全部功能，还可回收10份<br>答卷并统计下载，体验完整的问卷调查流程。</div>
+                        <form action="">
+
+                            <p>
+                                <span>登录名:</span><input type="text" value="" class="denglu" onfocus="huoqu()" onblur="shiqu()"/>
+                                <span class="huoqu1"><img class="img1" src="../image/promptInfo.gif"/>支持英文和数字，<i>注册后不能修改</i></span>
+                                <span class="huoqu2"><img class="img1" src="../image/InfoMistake.gif"/>用户名不能为空</span>
+                            </p>
+                            <p>
+                                <span>密码:</span><input type="text" class="mima" value="" onfocus="mima00()" onblur="mima01()"/>
+                                <span class="mima1"><img class="img1" src="../image/promptInfo.gif"/>支持英文和数字，<i>注册后不能修改</i></span>
+                                <span class="mima2"><img class="img1" src="../image/InfoMistake.gif"/>密码长度要在6-20个字符之间。</span>
+                            </p>
+                            <p>
+                                <span>手机号码:</span><input type="text" value=""/><span>可通过手机号登录问卷星</span>
+                            </p>
+                            <p>
+                                <span>图形验证码:</span><input class="yan" type="text"  onfocus="yan()" value=""/>
+                                <span class="yanzheng">验证码</span>
+                            </p>
+                            <p>
+                                <span></span><a href="#">我已阅读并接受问卷星服务条款</a>
+                            </p>
+                            <p>
+                                <span></span><input type="button" value="创建用户"/>
+                            </p>
+                            <div>
+                                <p>已有账号，立即登录</p>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="xiazai">
+        <p>企业版服务为企业、政府、高校和科研院所提供更专业的功能和更贴心的服务，包括录入问卷服务和全<br>称在线写辅助，更多企业版功能可以查看及下载右边的文档。</p>
+        <div>
+            <input type="button" value="下载介绍文档">
+            <input type="button" value="版本区别">
+        </div>
+    </div>
+
+    <div class="waiguan">
+        <div>
+            <h1>DIY独特的问卷外观</h1>
+            <img src="../image/part1_c1.gif" alt="">
+        </div>
+        
+    </div>
+
+    <div class="tixing">
+        <div>
+            <h1>32种题型，信手拈来</h1>
+            <p>支持单选、多选、矩阵、排序等常规题型，还提供更加专业的量表、<br/>比重、表格等题型，让问卷更加完善，结果更加精准！</p>
+            <img src="../image/part2_c2.gif" alt="">
+        </div>
+
+    </div>
+
+    <div class="luoji">
+        <div>
+            <h1>设置答题逻辑</h1>
+            <p>复杂问题简单化</p>
+            <img src="../image/part4_c2.gif" alt="">
+        </div>
+
+    </div>
+
+    <div class="fenxi">
+        <div>
+            <h1>数据分析&统计报告</h1>
+            <p>图文并茂 随心搭配</p>
+            <img src="../image/part5_c2.gif" alt="">
+            <img src="../image/part5_c3.gif" alt="">
+        </div>
+    </div>
+
+    <div class="yaoqing">
+        <div>
+            <h1>多途径邀请问卷</h1>
+            <img src="../image/part6_c1.jpg" alt="">
+            <img src="../image/part6_c2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="shuju">
+        <div>
+            <h1>原始数据&nbsp;溯源分析</h1>
+            <img src="../image/part7_c2.gif" alt="">
+            <img src="../image/part7_c3.gif" alt="">
+        </div>
+    </div>
+
+    <div class="gongneng">
+        <div>
+            <h1>多途径邀请问卷</h1>
+            <div>
+                <img src="../image/part8_c2.gif" alt="">
+                <img src="../image/part8_c3.gif" alt="">
+            </div>
+            <div>
+                <div><h2>设置提交答卷后的处理逻辑</h2><p>通过邮件和短信发送自定义内容</p><img src="../image/part8_c4.gif" alt=""></div>
+                <div><h2>自定义奖品 实时抽奖</h2><p>可设置奖项，在提交答卷后自动跳转</p><img src="../image/part8_c5.gif" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buzhi">
+        <div>
+            <h1>不止于功能</h1>
+            <div>
+                <div><span>1</span><span>人工录入问卷</span></div>
+                <p>从文档到精美的在线问卷，只需等待<br>一盏茶的功夫</p>
+                <ul>
+                    <li><img src="../image/QM-free2016.gif" alt="">免费赠送</li>
+                    <li><img src="../image/QM-response2016.gif" alt="">急速响应</li>
+                    <li><img src="../image/QM-time2016.gif" alt="">省心高效</li>
+                </ul>
+                <span><img src="../image/QM-change2016.gif" alt=""></span>
+            </div>
+            <div>
+                <div><span>2</span><span>全程人工协助</span></div>
+                <p>您离最佳解决方案，只隔一个电话，<br>一次QQ交谈或者在线协助</p>
+                <ul>
+                    <li><img src="../image/QM-qqico2016.gif" alt="">QQ咨询</li>
+                    <li><img src="../image/QM-phone2016.gif" alt="">400-839-8080转1</li>
+                    <li><img src="../image/QM-Artificial2016.gif" alt="">在线协助</li>
+                </ul>
+                <span><img src="../image/QM-person2016.gif" alt=""></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="anquan">
+        <div>
+            <h1>数据安全与保障</h1>
+            <div>
+                <img src="../image/QM-DataSecurity.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="goumai">
+        <div>
+            <h1>价格与购买</h1>
+            <p>问卷星企业版为您提供不限时长的使用，在试用阶段可以体验所有功能。<br/>试用满意后，在线购买立即生效。</p>
+            <div class="content">
+                <div class="left">
+                    <div><img src="../image/QM-money2016.gif" alt=""><p>380元/月<br/>2880元/年</p></div>
+                    <p>支付宝，网银和银行转账的<br>支付方式</p>
+                    <input type="button" value="购买服务">
+                </div>
+                <div class="center">
+                    <img src="../image/QM-invoice.gif" alt="">
+                    <p>正规机打发票，付款后三个工作日内通过顺<br>丰快递寄送给您</p>
+                    <img src="../image/QM-SF2016.gif" alt="">
+                </div>
+                <div class="right">
+                    <img src="../image/QM-protocol.gif" alt="">
+                    <p>标准合作协议</p>
+                    <input type="button" value="点击查看">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="liaojie">
+        问卷星付费客户覆盖超过2万家企业和国内90%的高校，是各行业领导品牌新来的企业数据平台。
+        <a href="">了解更多</a>
+    </div>
+
+    <div class="qiehuan">
+        <div class="f_tu"><img src="../image/F-Cicon1-hover.gif" alt="" class="f_imgs f_imgs_2"><span class="span1 span1_2"></span><span class="span2 span2_2"></span></div>
+        <div class="f_tu"><img src="../image/F-Cicon2.gif" alt="" class="f_imgs f_imgs_2"><span class="span1 span1_2"></span><span class="span2 span2_2"></span></div>
+        <div class="f_tu"><img src="../image/F-Cicon3.gif" alt="" class="f_imgs f_imgs_2"><span class="span1 span1_2"></span><span class="span2 span2_2"></span></div>
+        <div class="f_tu"><img src="../image/F-Cicon4.gif" alt="" class="f_imgs f_imgs_2"><span class="span1 span1_2"></span><span class="span2 span2_2"></span></div>
+        <div class="f_tu"><img src="../image/F-Cicon5.gif" alt="" class="f_imgs f_imgs_2"><span class="span1 span1_2"></span><span class="span2 span2_2"></span></div>
+        <div class="f_tu"><img src="../image/F-Cicon6.gif" alt="" class="f_imgs f_imgs_2"><span class="span1 span1_2"></span><span class="span2 span2_2"></span></div>
+        <div class="f_tu"><img src="../image/F-Cicon7.gif" alt="" class="f_imgs f_imgs_2"><span class="span1 span1_2"></span><span class="span2 span2_2"></span></div>
+    </div>
+
+    <div class="shangbiao">
+        <div class="f_img f_img_2"><div>高校</div><img src="../image/CTbox-logo1.gif" alt=""></div>
+        <div class="f_img f_img_2"><div>互联网</div><img src="../image/CTbox-logo2.gif" alt=""></div>
+        <div class="f_img f_img_2"><div>汽车</div><img src="../image/CTbox-logo4.gif" alt=""></div>
+        <div class="f_img f_img_2"><div>零售</div><img src="../image/CTbox-logo5.gif" alt=""></div>
+        <div class="f_img f_img_2"><div>咨询</div><img src="../image/CTbox-logo3.gif" alt=""></div>
+        <div class="f_img f_img_2"><div>IT</div><img src="../image/CTbox-logo6.gif" alt=""></div>
+        <div class="f_img f_img_2"><div>金融机构</div><img src="../image/CTbox-logo7.gif" alt=""></div>
+    </div>
+
+    <div class="w_fenye5_footer">
+        <div class="w_cont10">
+            <div class="w_cont10_1">
+                <ul>
+                    <li><img src="../image/footlogo.png"/></li>
+                    <li>
+                        <p><img src="../image/2016Sico.gif"/>产品</p>
+                        <ol>
+                            <li><a href="#">企业服务</a></li>
+                            <li><a href="#">样本服务</a></li>
+                            <li><a href="#">大客户服务</a></li>
+                            <li><a href="#">数据服务</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><img src="../image/2016Sico2.gif"/>客户</p>
+                        <ol>
+                            <li><a href="#">客户展示</a></li>
+                            <li><a href="#">媒体报道</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><img src="../image/2016Sico3.gif"/>支持</p>
+                        <ol>
+                            <li><a href="#">客服中心</a></li>
+                            <li><a href="#">帮助中心  API</a></li>
+                            <li><a href="#">问卷星APP</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p><img src="../image/2016Sico4.gif"/>产品</p>
+                        <ol>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">加入我们</a><img src="../image/Nzhoapin.png"/></li>
+                            <li><a href="#">最新动态</a><img src="../image/icon_sub_c1s11.gif"/></li>
+                        </ol>
+                    </li>
+                </ul>
+                <div>
+                    <p>
+                        <span>Contact USTel：400-839-8080E-mail：cs@sojump.com</span>
+                    </p>
+                    <p>
+                        <img src="../image/bottom_right.gif"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+<script type="text/javascript">
+    var f_imgs_2 = document.getElementsByClassName("f_imgs_2");
+    var f_img_2 = document.getElementsByClassName("f_img_2");
+    var span1_2 = document.getElementsByClassName("span1_2");
+    var span2_2 = document.getElementsByClassName("span2_2");
+    var f_images_2 = [
+        "../image/F-Cicon1-hover.gif",
+        "../image/F-Cicon2-hover.gif",
+        "../image/F-Cicon3-hover.gif",
+        "../image/F-Cicon4-hover.gif",
+        "../image/F-Cicon5-hover.gif",
+        "../image/F-Cicon6-hover.gif",
+        "../image/F-Cicon7-hover.gif"
+    ];
+    var f_images2_2 = [
+        "../image/F-Cicon1.gif",
+        "../image/F-Cicon2.gif",
+        "../image/F-Cicon3.gif",
+        "../image/F-Cicon4.gif",
+        "../image/F-Cicon5.gif",
+        "../image/F-Cicon6.gif",
+        "../image/F-Cicon7.gif"
+    ]
+    for(var i=0;i<f_imgs_2.length;i++){
+        f_imgs_2[i].index = i;
+        f_imgs_2[i].onmouseover = function(){
+            for(var j=0;j<f_imgs_2.length;j++){
+                f_imgs_2[j].src = f_images2_2[j];
+                f_img_2[j].style.display = "none";
+                span1_2[j].style.display = "none";
+                span2_2[j].style.display = "none";
+            }
+            f_imgs_2[this.index].src = f_images_2[this.index];
+            f_img_2[this.index].style.display = "block";
+            span1_2[this.index].style.display = "block";
+            span2_2[this.index].style.display = "block";
+        }
+    }
+
+
+</script>
+
+
+<script type="text/javascript">
+    var huoqu1 = document.getElementsByClassName("huoqu1")[0];
+    var huoqu2  = document.getElementsByClassName("huoqu2")[0];
+    var mima1 = document.getElementsByClassName("mima1")[0];
+    var mima2  = document.getElementsByClassName("mima2")[0];
+    var denglu  = document.getElementsByClassName("denglu")[0];
+    var mima  = document.getElementsByClassName("mima")[0];
+    var yanzheng  = document.getElementsByClassName("yanzheng")[0];
+    function huoqu(){
+        if(denglu.value == ''){
+            huoqu2.style.display = 'none';
+            huoqu1.style.display = 'block';
+        }
+    }
+    function shiqu(){
+        if(denglu.value == ''){
+            huoqu1.style.display = 'none';
+            huoqu2.style.display = 'block';
+        }
+    }
+    function mima00(){
+        if(mima.value == ''){
+            mima2.style.display = 'none';
+            mima1.style.display = 'block';
+        }
+    }
+    function mima01(){
+        if(mima.value == ''){
+            mima1.style.display = 'none';
+            mima2.style.display = 'block';
+        }
+    }
+    function yan(){
+        yanzheng.style.display = 'block';
+    }
+</script>
+</html>

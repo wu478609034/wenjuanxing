@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<script src="../ajs/angular.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../js/w_yingyongzhanshi.js" type="text/javascript" charset="utf-8"></script>-->
+		<link rel="stylesheet" type="text/css" href="../css/w_yingyongzhanshi.css"/>
+		<link rel="stylesheet" type="text/css" href="../fonts/css/font-awesome.min.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="w_yingyongzhanshi">
+			<div class="w_quan">
+				<div class="w_quanju">
+					<ul>
+						<li ng-repeat="qq in dian track by $index">		
+							<img src="{{qq.img}}" ng-mousemove="add($index)" ng-mouseout="add1($index)"/><br /><br />
+							<span>{{qq.cont}}</span>
+						</li>	
+					</ul>
+				</div>
+				<div class="w_quanju1">
+					<div class="w_cont">
+						<div class="w_cont_1">
+							
+							<p>
+								无论您身处的行业、从事的职业、担任的角色，			
+							</p>
+							<p>
+								问卷星都可以帮助您轻松完成在线调查、调研及信息收集等复杂工作。
+							</p>
+						</div>
+						<div class="w_cont_2">
+							<p>
+								<img src="../img/part-list-ico.gif"/>
+							</p>
+							<ul>
+								<li>政府、学校</li>
+								<li>老师、学生</li>
+								<li>电商、网游</li>
+								<li>市场部、市场调查</li>
+								<li>企业HR</li>
+							</ul>
+						</div>
+					</div>
+					<div class="w_cont1">
+						<div class="w_cont1_1">
+							<p>32种题型，应有尽有</p>
+							<p>单选、多选、矩阵、排序、量表、比重、表格、文件上传等多种题型</p>
+						</div>
+						<div class="w_cont1_2">
+							<img src="../img/part2_c2.gif"/>
+						</div>
+					</div>
+					<div class="w_cont2">
+						<div class="w_cont2_1">
+							<p>问卷逻辑，轻松实现复杂问卷</p>
+							<p>三种问卷逻辑，实现题目选项之间复杂关系</p>
+						</div>
+						<div class="w_cont2_2">
+							<img src="../img/part2-pic.gif"/>
+						</div>
+					</div>
+					<div class="w_cont3">
+						<div>
+								<div class="w_cont3_1">
+									<div class="w_cont3_11">
+										<p>多渠道推送问卷收集答卷</p>
+										<p>跟踪被邀请人是否打开了问卷，是否填写了问卷</p>
+										<ul>
+											<li>QQ好友、QQ群、空间</li>
+											<li>微信好友、微信群、朋友圈</li>
+											<li>发送问卷二维码，好友扫一扫填问卷</li>
+											<li>群发短信邀请</li>
+											<li>群发邮件邀请</li>
+										</ul>
+									</div>
+								</div>
+								<div>
+									<img src="../img/part3-pic.gif"/>
+								</div>
+						</div>
+					</div>
+					<div class="w_cont4">
+						<div>
+								<div>
+									<img src="../img/Form-password.gif"/>
+								</div>
+								<div class="w_cont4_1">
+									<div>
+										<p>问卷密码</p>
+										
+										<ul>
+											<li>单个密码：设置唯一密码，轻松保护问卷</li>
+											<li>密码列表：使用工号、手机号等作为密码，<br />为每个填写者分配唯一密码</li>
+											<li>短信验证：输入手机号码，获取短信验证<br />码，两步完成验证！</li>
+										
+										</ul>
+									</div>
+								</div>
+						</div>
+					</div>
+				
+					<div class="w_cont5">
+						<div>
+								<div class="w_cont5_1">
+									<div>
+										<p>设置抽奖，让问卷变得有趣，让填写者有动力</p>
+										<ul class="w_cont5_2">
+											<li>系统默认抽奖</li>
+											<li>自定义奖品
+												<ul>
+													<li>实物类：手机、平板、everything</li>
+													<li>虚拟类：积分、优惠券、红包拿到手软</li>
+												</ul>
+											</li>
+											
+										</ul>
+									</div>
+								</div>
+								<div>
+									<img src="../img/Ashow-Lottery.jpg"/>
+								</div>
+						</div>
+					</div>
+				
+					<div class="w_cont6">
+						<div>
+							
+								<div>
+									<img src="../img/Frequencyp.gif"/>
+								</div>
+								<div>
+									<ul>
+										<li>频数分析
+											<ol>
+												<li>直观呈现数据结果，简单统计选项的频数。</li>
+											</ol>
+										</li>
+										<li>分类统计
+											<ol>
+												<li>可以按性别、年龄、部门进行分类统计。</li>
+											</ol>
+										</li>
+										<li>交叉分析
+											<ol>
+												<li>设定一个或多个自变量和因变量，进行交叉分析</li>
+											</ol>
+										</li>
+										<li>分析结果可以下载到Word
+											<ol>
+												<li>统计分析的表格、图形等都可以下载到Word文档</li>
+											</ol>
+										</li>
+									</ul>
+								</div>
+						</div>
+					</div>
+				
+					<div class="w_cont3">
+						<div>
+								<div class="w_cont3_1">
+									<div class="w_cont7_1">
+										<p>Excel、SPSS数据下载</p>
+										<p>下载.sav的SPSS数据文件，用于更加高级的数据分析</p>
+
+									</div>
+								</div>
+								<div>
+									<img src="../img/wjxSPSS.jpg">
+								</div>
+						</div>
+					</div>
+				
+					<div class="w_cont3 w_cont8">
+						<div>
+								<div class="w_cont3_1">
+									<div class="w_cont8_1">
+										<p>典型问卷展示</p>
+										<p>不仅可以通过问卷星发起调查，还可以回收答卷，分析<br />数据，查看原始答卷</p>
+
+									</div>
+								</div>
+								<div>
+									<img src="../img/Mmplete.gif">
+								</div>
+						</div>
+					</div>
+					<div class="w_cont9">
+						<ul>
+							<li>
+								<p>企业员工满意度调查问卷</p>
+								<p>
+									<a href="#">查看问卷</a>
+									<span>|</span>
+									<a href="#">查看报告</a>
+								</p>
+							</li>
+							<li>
+								<p>员工满意度调查问卷</p>
+								<p>
+									<a href="#">查看问卷</a>
+									<span>|</span>
+									<a href="#">查看报告</a>
+								</p>
+							</li>
+							<li>
+								<p>企业员工组织公平感与敬业度调查</p>
+								<p>
+									<a href="#">查看问卷</a>
+									<span>|</span>
+									<a href="#">查看报告</a>
+								</p>
+							</li>
+							<li>
+								<p>大润发客户满意度调查</p>
+								<p>
+									<a href="#">查看问卷</a>
+									<span>|</span>
+									<a href="#">查看报告</a>
+								</p>
+							</li>
+							<li>
+								<p>移动商务客户满意度调查</p>
+								<p>
+									<a href="#">查看问卷</a>
+									<span>|</span>
+									<a href="#">查看报告</a>
+								</p>
+							</li>
+							<li>
+								<p>手机市场需求调查问卷</p>
+								<p>
+									<a href="#">查看问卷</a>
+									<span>|</span>
+									<a href="#">查看报告</a>
+								</p>
+							</li>
+							<li>
+								<p></p>
+								<p>更多》</p>
+							</li>
+						</ul>
+						<p>
+							<input type="button" name=""  value="立即发起调查" />
+						</p>
+					</div>
+					<div class="w_cont10">
+						<div class="w_cont10_1">
+							<ul>
+								<li><img src="../img/footlogo.png"/></li>
+								<li>
+									<p><img src="../img/2016Sico.gif"/>产品</p>
+									<ol>
+										<li><a href="#">企业服务</a></li>
+										<li><a href="#">样本服务</a></li>
+										<li><a href="#">大客户服务</a></li>
+										<li><a href="#">数据服务</a></li>
+									</ol>
+								</li>
+								<li>
+									<p><img src="../img/2016Sico2.gif"/>客户</p>
+									<ol>
+										<li><a href="#">客户展示</a></li>
+										<li><a href="#">媒体报道</a></li>	
+									</ol>
+								</li>
+								<li>
+									<p><img src="../img/2016Sico3.gif"/>支持</p>
+									<ol>
+										<li><a href="#">客服中心</a></li>
+										<li><a href="#">帮助中心  API</a></li>
+										<li><a href="#">问卷星APP</a></li>
+									</ol>
+								</li>
+								<li>
+									<p><img src="../img/2016Sico4.gif"/>产品</p>
+									<ol>
+										<li><a href="#">关于我们</a></li>
+										<li><a href="#">加入我们</a><img src="../img/Nzhoapin.png"/></li>
+										<li><a href="#">最新动态</a><img src="../img/icon_sub_c1s11.gif"/></li>
+									</ol>
+								</li>
+							</ul>
+							<div>
+								<p>
+									<span>Contact USTel：400-839-8080E-mail：cs@sojump.com</span>
+								</p>
+								<p>
+									<img src="../img/bottom_right.gif"/>
+								</p>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+	
+</html>

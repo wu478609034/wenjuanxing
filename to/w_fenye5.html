@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		
+		<script src="../js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../css/w_fenye5.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="w_fenye5_quanju"  ng-controller="myctrl">
+			<div class="w_fenye5_header">
+				<div>
+					<div>
+							<p>
+								<input type="text" placeholder="输入关键字 ,在14,817，215份问卷中搜索"/>	
+								<a href="#">
+									<img src="../img/survey-ss.png"/>
+									搜索
+								</a>
+							</p>
+							<p>
+								<a href="#">
+									<img src="../img/jiahao.png"/>
+									创建新问卷
+								</a>
+								
+							</p>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="w_fenye5_content">
+				<ul class="w_fenye5_cont1">
+					<li ng-repeat="aa in dian1 track by $index" ng-click="add1($index)">
+						<p>
+							<img src="{{aa.img}}"/>
+							<span class="sp"></span>
+						</p><br />
+						{{aa.cont}}
+					</li>
+				</ul>
+				<div  class="w_fenye5_cont2">
+						<div>
+							<ul>
+								<li>
+									<img src="../img/sitem-01.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-01.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-03.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-04.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<img src="../img/sitem-05.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-06.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-07.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+									<li><img src="../img/sitem-04.jpg"/></li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li>
+									<img src="../img/sitem-05.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-06.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-07.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-08.jpg"/>
+								<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<img src="../img/sitem-01.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-02.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-03.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li>
+									<img src="../img/sitem-03.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+									
+								</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li><img src="../img/sitem-01.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li><img src="../img/sitem-02.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li><img src="../img/sitem-03.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>		
+								</li>
+								<li><img src="../img/sitem-04.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+							</ul>
+							<ul>
+								<li><img src="../img/sitem-05.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li><img src="../img/sitem-06.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li><img src="../img/sitem-07.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+								<li><img src="../img/sitem-08.jpg"/>
+									<p class="w_pp1"><a href="#">惹急新人大叔大婶</a></p>
+									<p class="w_pp2">
+										<span>1231</span>
+										<span>1231</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li><img src="../img/sitem-05.jpg"/></li>
+								<li><img src="../img/sitem-06.jpg"/></li>
+								<li><img src="../img/sitem-07.jpg"/></li>
+								<li><img src="../img/sitem-08.jpg"/></li>
+							</ul>
+							<ul>
+								<li><img src="../img/sitem-01.jpg"/></li>
+								<li><img src="../img/sitem-02.jpg"/></li>
+								<li><img src="../img/sitem-03.jpg"/></li>
+								<li><img src="../img/sitem-04.jpg"/></li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li><img src="../img/sitem-01.jpg"/></li>
+								<li><img src="../img/sitem-02.jpg"/></li>
+								<li><img src="../img/sitem-03.jpg"/></li>
+								<li><img src="../img/sitem-04.jpg"/></li>
+							</ul>
+							<ul>
+								<li><img src="../img/sitem-05.jpg"/></li>
+								<li><img src="../img/sitem-06.jpg"/></li>
+								<li><img src="../img/sitem-07.jpg"/></li>
+								<li><img src="../img/sitem-08.jpg"/></li>
+							</ul>
+						</div>
+						<div>
+							<ul>
+								<li><img src="../img/sitem-05.jpg"/></li>
+								<li><img src="../img/sitem-06.jpg"/></li>
+								<li><img src="../img/sitem-07.jpg"/></li>
+								<li><img src="../img/sitem-08.jpg"/></li>
+							</ul>
+							<ul>
+								<li><img src="../img/sitem-01.jpg"/></li>
+								<li><img src="../img/sitem-02.jpg"/></li>
+								<li><img src="../img/sitem-03.jpg"/></li>
+							
+								<li class="w_fenye5_cont2_1" ng-mousemove="huan1()" ng-mouseout="huan2()">
+									<p class="w_yin">
+										<span>热门测评</span>
+										<span></span>
+									</p>
+									<span ng-repeat="aa1 in huan"><img src="{{aa1.img}}"/></span>
+								</li>
+							</ul>
+						</div>
+					
+				</div>
+			</div>
+		
+			<div class="w_fenye5_footer">
+					<div class="w_cont10">
+						<div class="w_cont10_1">
+							<ul>
+								<li><img src="../img/footlogo.png"/></li>
+								<li>
+									<p><img src="../img/2016Sico.gif"/>产品</p>
+									<ol>
+										<li><a href="#">企业服务</a></li>
+										<li><a href="#">样本服务</a></li>
+										<li><a href="#">大客户服务</a></li>
+										<li><a href="#">数据服务</a></li>
+									</ol>
+								</li>
+								<li>
+									<p><img src="../img/2016Sico2.gif"/>客户</p>
+									<ol>
+										<li><a href="#">客户展示</a></li>
+										<li><a href="#">媒体报道</a></li>	
+									</ol>
+								</li>
+								<li>
+									<p><img src="../img/2016Sico3.gif"/>支持</p>
+									<ol>
+										<li><a href="#">客服中心</a></li>
+										<li><a href="#">帮助中心  API</a></li>
+										<li><a href="#">问卷星APP</a></li>
+									</ol>
+								</li>
+								<li>
+									<p><img src="../img/2016Sico4.gif"/>产品</p>
+									<ol>
+										<li><a href="#">关于我们</a></li>
+										<li><a href="#">加入我们</a><img src="../img/Nzhoapin.png"/></li>
+										<li><a href="#">最新动态</a><img src="../img/icon_sub_c1s11.gif"/></li>
+									</ol>
+								</li>
+							</ul>
+							<div>
+								<p>
+									<span>Contact USTel：400-839-8080E-mail：cs@sojump.com</span>
+								</p>
+								<p>
+									<img src="../img/bottom_right.gif"/>
+								</p>
+							</div>
+						</div>
+					</div>
+			</div>
+		
+		</div>
+	</body>
+	<!--<script type="text/javascript">
+		var app = angular.module("myApp",[]);
+		
+	</script>-->
+</html>

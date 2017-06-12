@@ -1,0 +1,168 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.w_denglu_content {
+  width: 100%; }
+  .w_denglu_content > div {
+    width: 855px;
+    margin: 0 auto;
+    overflow: hidden; }
+    .w_denglu_content > div > div:first-child {
+      float: left; }
+    .w_denglu_content > div > div:last-child {
+      width: 352px;
+      padding: 20px 0px 0px;
+      float: right; }
+      .w_denglu_content > div > div:last-child > P:first-child {
+        width: 352px;
+        height: 33px;
+        text-align: center;
+        font-family: 微软雅黑;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding-top: 20px;
+        background: url("../img/login-tbg2016.jpg") no-repeat; }
+      .w_denglu_content > div > div:last-child > div:nth-child(2) {
+        width: 311px;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        background: #FFF;
+        margin-left: 3px;
+        padding: 25px 0 15px 32px; }
+        .w_denglu_content > div > div:last-child > div:nth-child(2) ul li {
+          list-style: none;
+          overflow: hidden;
+          padding: 4px 0; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul li span {
+            display: inline-block;
+            height: 30px;
+            float: left;
+            line-height: 30px;
+            margin-right: 3px;
+            width: 44px; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul li i {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            float: left;
+            border: 1px solid #d9d9d9;
+            border-right: 0px;
+            background: #f7f7f7 url(../img/username_ico.gif) no-repeat center center;
+            background-size: 58%; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul li .ii {
+            background: #f7f7f7 url(../img/username_ico2.gif) no-repeat center center; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul li input {
+            border: 1px solid #d9d9d9;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+            width: 170px;
+            line-height: 30px;
+            color: #747474;
+            float: left;
+            padding: 0px; }
+        .w_denglu_content > div > div:last-child > div:nth-child(2) ul li:nth-child(3) p {
+          width: 200px;
+          padding: 5px 0;
+          display: inline-block; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul li:nth-child(3) p input {
+            width: 30px;
+            box-shadow: none; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul li:nth-child(3) p a {
+            float: right; }
+        .w_denglu_content > div > div:last-child > div:nth-child(2) ul > li:nth-child(4) > p {
+          width: 200px;
+          padding: 5px 0;
+          display: inline-block;
+          overflow: hidden; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul > li:nth-child(4) > p > input {
+            display: inline-block;
+            width: 80px;
+            height: 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            float: left;
+            padding-left: 0;
+            background: #f17819; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul > li:nth-child(4) > p input:hover {
+            background: orange; }
+          .w_denglu_content > div > div:last-child > div:nth-child(2) ul > li:nth-child(4) > p a {
+            float: right; }
+      .w_denglu_content > div > div:last-child > div:nth-child(3) {
+        background: url(../img/login-nbbg2016.jpg);
+        width: 352px;
+        height: 40px;
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-size: 16px; }
+
+.w_fenye5_footer {
+  margin-top: -35px; }
+  .w_fenye5_footer .w_cont10 {
+    width: 100%;
+    background: #f6f6f6;
+    margin-top: 80px; }
+    .w_fenye5_footer .w_cont10 .w_cont10_1 {
+      width: 940px;
+      padding: 20px 0;
+      margin: 0 auto; }
+      .w_fenye5_footer .w_cont10 .w_cont10_1 ul {
+        display: flex;
+        padding: 30px 0; }
+        .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li {
+          border-right: 1px solid #e5e5e5;
+          -webkit-flex-grow: 1;
+          padding-left: 30px;
+          list-style: none; }
+          .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li p {
+            line-height: 30px;
+            font-weight: bold;
+            font-size: 18px; }
+            .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li p img {
+              vertical-align: middle;
+              margin-right: 15px; }
+          .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol:last-child li:nth-child(2) {
+            position: relative; }
+            .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol:last-child li:nth-child(2) img {
+              position: absolute;
+              top: -8px; }
+          .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol {
+            margin-left: 50px; }
+            .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li {
+              list-style: none;
+              padding: 3px 0;
+              color: #7e7b7b;
+              font-size: 14px; }
+              .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li img {
+                vertical-align: middle; }
+              .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li a {
+                text-decoration: none;
+                color: #a5a5a5; }
+            .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li ol li:hover a {
+              color: orange; }
+        .w_fenye5_footer .w_cont10 .w_cont10_1 ul > li:last-child {
+          border: 0; }
+      .w_fenye5_footer .w_cont10 .w_cont10_1 div {
+        overflow: hidden;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc; }
+        .w_fenye5_footer .w_cont10 .w_cont10_1 div p {
+          height: 30px; }
+        .w_fenye5_footer .w_cont10 .w_cont10_1 div p:first-child {
+          float: left; }
+          .w_fenye5_footer .w_cont10 .w_cont10_1 div p:first-child span {
+            color: #ccc;
+            font-size: 18px;
+            display: block;
+            padding-top: 5px; }
+        .w_fenye5_footer .w_cont10 .w_cont10_1 div p:last-child {
+          float: right; }
+
+/*# sourceMappingURL=w_denglu.css.map */
